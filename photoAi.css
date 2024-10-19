@@ -1,0 +1,115 @@
+   /* Thiết lập chung */
+   * {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body,html {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f0f2f5;
+    color: #333;
+    padding: 20px;
+}
+h2 {
+    background-color: #00d8cd;
+    color: white;
+    font-weight: bold;
+    text-align: center;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0px 4px 5px rgba(0, 0, 0, 0.1);
+    font-size: 35px;
+}
+.container {
+    max-width: 900px;
+    margin: 0 auto;
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+.upload-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+    gap: 20px; 
+ /*  gap :Tạo khoảng cách giữa các phần từ  */
+/*justify-content: space-between; : Giữa các thành phần có khoảng cách đều nhau, tạo bố cục hài hòa.*/
+}
+
+.upload-section label{
+    font-weight: bolder;
+    color: #00d8cd;
+    margin-right: 15px;
+}
+.upload-section input[type="file"] {
+    padding: 10px;
+    border: 2px solid #00d8cd;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.image-preview {
+    width: 250px;
+    height: 250px;
+    border-radius: 8px;
+    border: 2px solid #00d8cd;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f9f9f9;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.05);
+    margin-right: 25px;
+    margin-top: 25px;
+}
+.image-preview img {
+    max-width: 100%;
+    max-height: 100%;
+    border-radius: 8px;
+}
+
+.analyze-button {
+    text-align: center;
+    margin-bottom: 35px;
+}
+button {
+    padding: 10px 30px;
+    font-size: 1.1rem;
+    cursor: pointer;
+    background-color: #00d8cd;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+button:hover {
+    background-color: #00d8cd;
+}
+h3 {
+    color: #a8edea; 
+    margin-bottom: 10px;
+}
+.result-section, .categorized-section {
+    margin-top: 20px;
+}
+/* chỉnh sửa kích cỡ nơi chứa hinhfa nhr sau khi phân tích */
+.categorized-section .image-box{
+    display: inline-block;
+    width: 150px;
+    margin: 10px;
+    text-align: center;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.05);
+    padding: 20px;
+}
+.image-box img {
+    width: 100%;
+    border-radius: 8px;
+}
+.image-box p {
+    margin-top: 8px;
+    font-weight: bold;
+    color: #333;
+}

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="photoAi.css">
+    <title>Ứng Dụng AI Phân Loại Hình Ảnh</title>
+
+</head>
+<body>
+    <!-- <header>
+        Ứng Dụng AI Phân Loại Hình Ảnh
+    </header> -->
+    <h2> Ứng Dụng AI Phân Loại Hình Ảnh</h2>
+    <div class="container">
+        <!-- Upload Section -->
+        <div class="upload-section">
+            <div>
+                <label for="imageUpload">Chọn hình ảnh:</label>
+                <input type="file" id="imageUpload" accept="image/*">
+            </div>
+            <div class="image-preview" id="imagePreview">
+                <span>Hình ảnh sẽ hiển thị tại đây</span>
+            </div>
+        </div>
+
+        <!-- Analyze Button -->
+        <div class="analyze-button">
+            <button id="analyzeButton">Phân Tích Hình Ảnh</button>
+        </div>
+
+        <!-- Result Section -->
+        <div class="result-section">
+            <h3>Kết quả phân tích:</h3>
+            <div id="resultText">Chưa có kết quả nào.</div>
+        </div>
+
+        <!-- Categorized Section -->
+        <div class="categorized-section">
+            <h3>Hình ảnh đã phân loại:</h3>
+            <div id="categorizedImages">
+                <!-- Các hình ảnh sau khi phân loại sẽ được hiển thị tại đây -->
+                <!-- image-box chứa cá hình ảnh đã phân tích. -->
+            </div>
+        </div>
+    </div>
+
+    <script src="photoAI.js">
+        
+    </script>
+</body>
+</html>
